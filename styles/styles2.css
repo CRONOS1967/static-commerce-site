@@ -1,0 +1,120 @@
+.team-member,
+.team-member .team-img {
+  position: relative;
+}
+.team-member {
+  overflow: hidden;
+}
+.team-member,
+.team-member .team-img {
+  position: relative;
+}
+.team-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+  top: 35%;
+}
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .social-link {
+  opacity: 1;
+}
+.team-img img {
+  width: 100%;
+}
+.team-hover .desk {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translateY(-55%);
+  -ms-transform: translateY(-55%);
+  transform: translateY(-55%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  padding: 0 20px;
+}
+.desk,
+.desk h4,
+.team-hover .social-link a {
+  text-align: center;
+  color: #222;
+}
+.team-member:hover .team-hover .social-link {
+  bottom: 35%;
+}
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .social-link {
+  opacity: 1;
+}
+.team-hover .social-link {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  transform: translateY(45%);
+  -webkit-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+  font-size: 35px;
+}
+.team-hover p {
+  font-weight: 300;
+}
+.desk,
+.desk h4,
+.team-hover .social-link a {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.team-member .social-link a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 25px;
+}
+.team-member .social-link a:hover {
+  color: #ff8a00;
+  background: #fff;
+}
+.team-heading {
+  position: static;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.team-heading p {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.team-heading span {
+  font-size: 14px;
+  padding: 5px 0;
+  color: #ff8a00;
+}
+.social-link a {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.4392156862745098);
+  border: solid 1px rgba(204, 204, 204, 0.23137254901960785);
+}
+.social-link a i {
+  font-size: 21px;
+}
